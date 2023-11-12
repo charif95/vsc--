@@ -7,6 +7,7 @@ using namespace std;
 	enum Direction { North, South, East, West };
 	enum Week { Sat, Sun, Mon, Tue, Wed, Thu, Fri };
 
+
 	  int main()
 	  {
 		  Gender MyGender;
