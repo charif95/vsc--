@@ -12,7 +12,7 @@ int main()
     cin >> Mark3;
 
     Avr = (Mark1 + Mark2 + Mark3) /3;
-    
+
     cout << "Avr = " << Avr << endl; 
 
     if (Avr >= 50)
