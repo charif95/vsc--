@@ -21,6 +21,7 @@ struct Student
 
 void StudentInfo(Student &Info)
 {
+
     cout << "Please enter your FirstName?\n";
     cin >> Info.FirstName;
 
@@ -65,14 +66,24 @@ float CalculateMoyenneSvt(Student &Info)
     return (Info.Svt[0] + Info.Svt[1] + Info.Svt[2]) / 3;
 }
 float CalculateMoyenne(Student &Info)
+{
+        float MoyMath, MoyPhy, MoySvt, Result;
 
+
+     MoyMath = CalculateMoyenneMath(Info) * Info.MathPuis;
+     MoyPhy = CalculateMoyennePhysics(Info) * Info.PhysicsPuis;
+     MoySvt = CalculateMoyenneSvt(Info) * Info.SvtPuis;
+
+     Result = (MoyMath + MoyPhy + MoySvt) / (Info.MathPuis + Info.PhysicsPuis + Info.SvtPuis );
+
+    return Result;
+
+}
 
 int main()
 {
     Student Student1;
     StudentInfo(Student1);
-    cout << CalculateMoyenneMath(Student1) << endl; 
-    cout << CalculateMoyennePhysics(Student1) << endl;
-    cout << CalculateMoyenneSvt(Student1) << endl;
+    cout << CalculateMoyenne(Student1);
 
 }
