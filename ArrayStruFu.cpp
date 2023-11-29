@@ -46,19 +46,32 @@ void PrintInfo(strInfo Info)
 
 
 
-void ReadPersonsInfo(strInfo Persons[2])
+void ReadPersonsInfo(strInfo Persons[100], int& NumberOfPersons)
 {
-   ReadInfo(Persons[0]);
-   ReadInfo(Persons[1]);
+    cout << "How Many persons?\n";
+	cin >> NumberOfPersons;
+
+	for (int i = 0; i <= NumberOfPersons - 1; i++)
+	{
+
+		cout << "Please enter Person's " << i + 1 << " Info: " << endl;
+		ReadInfo(Persons[i]);
+
+	}
+  
 }
 
 
-void PrintPersonsInfo(strInfo Persons[2])
+void PrintPersonsInfo(strInfo Persons[100], int NumberOfPersons)
 {
-    cout << "\n**********************************\n";
 
-    PrintInfo(Persons[0]);
-    PrintInfo(Persons[1]);
+	for (int i = 0; i <= NumberOfPersons - 1; i++)
+	{
+
+		cout << "Person's " << i + 1 << "Info : \n";
+        PrintInfo(Persons[i]);
+
+	}
 
 }
 
@@ -67,10 +80,11 @@ void PrintPersonsInfo(strInfo Persons[2])
 int main()
 {
 
-    strInfo Persons[2];
+    strInfo Persons[100];
+    int NumberOfPersons = 1;
 
-    ReadPersonsInfo(Persons);
-    PrintPersonsInfo(Persons);
+    ReadPersonsInfo(Persons, NumberOfPersons);
+    PrintPersonsInfo(Persons, NumberOfPersons);
    
     return 0;
 }
