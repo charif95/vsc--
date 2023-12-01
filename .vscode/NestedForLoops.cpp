@@ -5,13 +5,16 @@ using namespace std;
 
 int main()
 {
-    for (char l = 65; l <= 90; l++)
+    for (int i = 65; i <= 90; i++)
     {
+        cout << "Letter: " << char(i) << endl;
 
-        for (char L = 65; L <= 90; L++)
+        for (char j = 65; j <= 90; j++)
         {
-            cout << l << L << endl;
+            cout << char(i) << char (j) << endl;
         }
+
+        cout << "-------------------------------\n";
         
     }
     return 0;
