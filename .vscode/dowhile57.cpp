@@ -10,7 +10,7 @@ int ReadIntNumberInRangeUsingWhile(int From, int To)
 
     while (Number < From || Number > To)
     {
-        cout << "Wrong Number,";
+        cout << "Wrong Number,\n";
         cout << "Please enter a number between " << From << " and " << To << endl;
         cin >> Number;
     }
@@ -33,7 +33,9 @@ int ReadIntNumberInRangeUsingDoWhile(int From, int To)
 
 int main()
 {
-    cout << "The number you entered is " << ReadIntNumberInRangeUsingWhile(18, 45) << endl;
-    // cout << "The number you entered is " << ReadIntNumberInRangeUsingDoWhile(18, 45) << endl;
+    int result1 = ReadIntNumberInRangeUsingWhile(18,45);
+    int result2 = ReadIntNumberInRangeUsingDoWhile(18,45);
+    cout << "The number you entered is " << result1 << endl;
+    // cout << "The number you entered is " << result2 << endl;
 
 }
