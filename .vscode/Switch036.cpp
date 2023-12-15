@@ -68,7 +68,8 @@ int main()
     }
 
     //===== switch =============
-
+    switch (day)
+    {
     case 1:
     case 2:
     case 3:
@@ -79,5 +80,5 @@ int main()
         break;
     default:
         cout << "Closed\n";
-
+    }
 */
