@@ -49,7 +49,7 @@ int main()
     {
         cout << nums[i] << "\n";
         i--;
-        if (i == 1)
+        if (i == 1) // < or >  =>  condition ==
         {
             break;
         }
