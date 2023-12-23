@@ -54,6 +54,51 @@ void calc(int numOne, int numTwo, string op)
 //     cout << numOne << " + " << numTwo << " =";
 //     cout << numOne + numTwo << "\n";
 }
+
+void result(int n1, int n2, int op)
+{
+
+    switch (op)
+    {
+    case 1:
+        cout << n1 << " + " << n2 << " = " << n1 + n2 << endl;
+        break;
+    case 2:
+        cout << n1 << " - " << n2 << " = " << n1 - n2 << endl;
+        break;
+    case 3:
+        cout << n1 << " / " << n2 << " = " << n1 / n2 << endl;
+        break;
+    case 4:
+        cout << n1 << " * " << n2 << " = " << n1 * n2 << endl;
+        break;
+        
+    default:
+        cout << "Operation Is Not Valide\n";
+        break;
+    }
+
+    /* switch (op)
+    {
+    case 1:
+         cout << n1 << " + " << n2 << " = " << n1 + n2 << endl;
+        break;
+    case 2:
+         cout << n1 << " - " << n2 << " = " << n1 - n2 << endl;
+        break;
+    case 3:
+         cout << n1 << " * " << n2 << " = " << n1 * n2 << endl;
+        break;
+    case 4:
+         cout << n1 << " / " << n2 << " = " << n1 / n2 << endl;
+        break;
+    
+    default:
+        cout << "Operation Is Not Valide\n";
+        break;
+    }
+ */
+}
 int main()
 {
     iceBox("Orange");
@@ -62,6 +107,8 @@ int main()
     iceBox("TV Remote");
 
     calc(10, 90, "*"); // 900
+    
+    result(20, 10, 1);
     
     return 0;
 }
