@@ -4,7 +4,8 @@
         "string": "cpp",
         "xstring": "cpp",
         "iostream": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "cmath": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
