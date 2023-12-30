@@ -113,15 +113,47 @@ int main()
 
 
     // Edit Here To Fix The Error
-  const int current_year = 2022;
+  /* const int current_year = 2022;
   const int birth_year = 1982;
 
   // Do Not Edit Here
   //current_year = 2022;
   //birth_year = 1982;
   int age_in_years = current_year - birth_year;
-  cout << age_in_years;
-  
+  cout << age_in_years; */
+
+    // cout << "======================================\n\n";
+
+    // Assignment 017
+   /*  int num, result;
+    cout << "Please Enter the Number?\n";
+    cin >> num;
+    result = num * num;
+    cout << "the Result Is: " << result << endl; */
+
+    // cout << "======================================\n\n";
+
+    // Assignment 018
+
+   /*  int A, B, Sum;
+    cout << "Please Enter The Numbers?\n";
+    cin >> A;
+    cin >> B;
+    Sum = A * B;
+    cout << "The Sum Is: " << Sum << endl; */
+
+    // cout << "======================================\n\n";
+
+    // Assignment 019
+
+    /* cout << "Bello Hello Elzeroo";
+    cout << " Web Schoolll";
+    cout << " I Love Programming";
+    cout << " Too Much";
+    cout << " Specially C++\n"; */
+
+    // cout << "======================================\n\n";
+
    return 0;
 
 }
