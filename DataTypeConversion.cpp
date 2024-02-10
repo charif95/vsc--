@@ -16,6 +16,7 @@ int main()
 
     // convert string to integer
     int num_int = stoi(st1);
+    
 
     // convert string to float
     float num_float = stof(st1);
